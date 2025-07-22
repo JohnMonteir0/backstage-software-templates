@@ -58,7 +58,7 @@ jobs:
         name: Install argocd
         shell: bash
         run: |
-          curl  -ksSL -o argocd https://argocd.654654498256.realhandsonlabs.net/download/argocd-linux-amd64
+          curl  -ksSL -o argocd https://argocd.767397786711.realhandsonlabs.net/download/argocd-linux-amd64
           sudo chmod +x argocd
           sudo mv ./argocd /usr/local/bin/argocd
 
@@ -66,7 +66,7 @@ jobs:
         name: Argocd app sync
         shell: bash
         run: |
-          argocd login argocd.654654498256.realhandsonlabs.net \
+          argocd login argocd.767397786711.realhandsonlabs.net \
            --insecure \
            --grpc-web \
            --username admin \
